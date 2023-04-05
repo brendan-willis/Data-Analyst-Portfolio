@@ -1,0 +1,157 @@
+---
+title: "Coding Challenge 4"
+author: "Brendan Willis"
+date: "3/19/2023"
+output: 
+  html_document:
+    code_folding: hide
+editor_options:
+  chunk_output_type: console
+---
+***1) Install the covidcast and DT packages using the following code. Note that you should run the following
+code locally on your machine but you only need to install the packages once, not every time you knit
+your assignment. Therefore, the following code should NOT be included in your knitted file.***
+
+
+
+***2) Read in us_locations.csv and load the tidyverse package and covidcast package. Use the first
+setup chunk at the top of your RMarkdown file to set the default chunk option message = FALSE,
+which means messages will not be displayed in the HTML output. (Tip: you might want to try running
+this with message = TRUE first and then changing it, to see the difference for yourself.) (1 pt)***
+
+```{r, message=FALSE}
+library(tidyverse)
+library(DT)
+library(covidcast)
+states <- read_csv("/Users/brendanwillis/Downloads/us_locations.csv")
+```
+
+
+***3) The covidcast package allows you to query over 1 billion rows of surveillance data related to COVID-19
+that are stored centrally in a database that is accessible through the Epidata API. Run the following
+query to download confirmed COVID-19 case data as reported by the JHU Center for Systems Science
+and Engineering (CSSE) dashboard. Note that the specified geo_values in the code below are FIPS
+codes that correspond to Hampshire, Franklin and Middlesex counties in Massachusetts. (1 pt)***
+```{r}
+covid_cases <- covidcast_signal(data_source = "jhu-csse",
+              signal = "confirmed_incidence_num",
+              start_day = "2020-03-01", end_day = "2022-02-21",
+              geo_values = c("25015", "25011", "25017"))
+```
+
+
+***4) Look at the resulting dataset in the local data viewer. What is the unit of analysis of this dataset? In
+other words, what variables uniquely identify each set of random observations for a row? (2 pts)***
+
+The unit of analysis of this dataset is a county on a day. The variables that uniquely identify this are geo_value and time_value. The variable geo_value indicates the county of each observation and time_value indicates the date that the observation is from.
+
+***5) Use the group_by() and summarize() functions to compute the total number of confirmed COVID-19
+cases reported in each of the three counties between March 1, 2020 and February 21, 2022. Print out
+the results in your report. First, print out the results as standard R console output, as long as it is
+clear which cumulative case count corresponds to each county. You should be able to complete this in
+one chained dplyr-style set of commands. Second, display the resulting table as an interactive table
+using DT::datatable() to show the results. (4 pts)***
+
+```{r}
+
+        
+x <- covid_cases %>%
+  group_by(geo_value)%>%
+  summarize(sum(value))
+  
+
+head(x)
+DT::datatable(x)
+```
+
+***6) Adapt the code you used in the previous question to print out the number of cases each county
+had in all of 2021. Hint: you can use something like dplyr::filter(my_date_variable >
+as.Date("2023-01-12") to filter rows that meet a specific criteria on a variable formatted as a Date
+class. Show the results using DT::datatable(). (2 pts)***
+
+```{r}
+cases_2021 <- covid_cases %>% 
+  filter(between(time_value, as.Date('2021-01-01'), as.Date('2021-12-31')))
+table_2021 <- cases_2021 %>%
+  group_by(geo_value)%>%
+  summarize(sum(value))
+DT::datatable(table_2021, rownames = FALSE, colnames = c("County", "Confirmed Cases"))
+```
+
+***7) To make the results in the previous question a bit more detailed and human-readable, perform the
+following analyses (ideally, although not required to be, in one chained dplyr command) (4 pts):
+a) use left_join() to join the us_locations dataset with the results from the previous quesion,
+b) create a new variable called fraction_infected that computes the number of confirmed cases as
+a fraction of the total population of the county,
+c) print out the results in an interactive datatable with four columns (in this order): county name,
+total confirmed infections, population, fraction infected.***
+
+```{r}
+count_name <- table_2021 %>%
+  left_join(states, by=c("geo_value" = "fips"))%>%
+  rename("case_count"="sum(value)")%>%
+  mutate(fraction_infected = case_count/population)%>%
+  select("location_name", "case_count", "population", "fraction_infected")
+
+DT::datatable(count_name, rownames = FALSE, colnames = c("County", "Confirmed Infections","Population", "Fraction Infected"))
+```
+
+
+
+***8) Query the Epidata API for confirmed cases for all US counties in the month of January 2022 and save
+this data as a new object in your workspace. (Tip: you can leave the geo_values argument unspecified
+and it will return all counties.) (1 pt)***
+
+```{r}
+covid_cases_january <- covidcast_signal(data_source = "jhu-csse",
+              signal = "confirmed_incidence_num",
+              start_day = "2022-01-01", end_day = "2022-01-31"
+              )
+```
+
+***9) Using a single chained set of dplyr commands, display an interactive datatable that shows all counties
+in the US, but it should be pre-sorted so that the counties with the highest rate of confirmed
+COVID-19 cases in January 2022 relative to their population size are at the top. (3 pts)***
+
+
+```{r}
+us_table2 <- covid_cases_january %>% 
+  group_by(geo_value)%>%
+  summarize(case_count=sum(value))%>%
+  left_join(states, by=c("geo_value" = "fips"))%>%
+  mutate(fraction_infected = case_count/population)%>%
+  arrange(desc(fraction_infected))%>%
+  select("location_name", "abbreviation","case_count", "population", "fraction_infected")%>%
+  datatable(count_name, rownames = FALSE, colnames = c("County", "State", "Confirmed 
+                                                       Infections","Population",
+                                                       "Fraction Infected"))
+us_table2
+  
+  
+```
+
+***10) Re-run the same analysis as in the question above but use group_by() and filter() so that only the
+county with the highest fraction confirmed cases in its state in January 2022 is shown. The resulting
+output should be an interactive table with 50 rows (only 10 shown at first by default), with only one
+line for each state. The only row that should be present for each state is for the county which had the
+highest rate in January 2022 for that particular state. (2 pts)***
+
+```{r}
+max_table <- covid_cases_january%>%
+  group_by(geo_value)%>%
+  summarize(case_count=sum(value))%>%
+  left_join(states, by=c("geo_value" = "fips"))%>%
+  mutate(fraction_infected = case_count/population)%>%
+  group_by(abbreviation)%>%
+  filter(fraction_infected == max(fraction_infected))%>%
+  arrange(desc(fraction_infected))%>%
+  select("location_name", "abbreviation","case_count", "population", "fraction_infected")%>%
+  datatable(count_name, rownames = FALSE, colnames = c("County", "State", "Confirmed 
+                                                       Infections","Population",
+                                                       "Fraction Infected"))
+max_table
+
+  
+
+```
+
