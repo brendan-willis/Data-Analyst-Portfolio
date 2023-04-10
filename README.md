@@ -19,7 +19,8 @@ This project consists of 3 parts:
 
 The initial creation of the word game is contained in the file 'ps2.py' above. When this program is run it deals a hand of 15 random letters to the player. The player makes as many words with the letters as they can until they either run out of letters or can't make any more words. The goal is to score as many points as possible. The 'ps3a.py' contains the second part of this project. This program implements a computer player for the word game that uses monte carlo simulation in order to take N samples from the hand and choose the word that provides the best score. The third part of the project in the file 'ps3c.ipynb' runs the simulation for different values of N. This file displays histograms that show how the score gotten by the computer program tends to increase as N increases.
 
-
+### Project 3 - SQL on Python
+In this project I utilize the sqlite3 library on Python to connect to databases and write SQL queries that clean and filter tables in order to get the data I want. I then use the pandas library to read tables into python as dataframes. I also join\merge tables based on specific columns.
 
 
 
