@@ -16,6 +16,7 @@ This project consists of 3 parts:
 1) Making simple word game.
 2) Programming computer player for word game by utilizing monte carlo simulation.
 3) analyzing results of simulation.
+
 The initial creation of the word game is contained in the file 'ps2.py' above. When this program is run it deals a hand of 15 random letters to the player. The player makes as many words with the letters as they can until they either run out of letters or can't make any more words. The goal is to score as many points as possible. The 'ps3a.py' contains the second part of this project. 
 
 
