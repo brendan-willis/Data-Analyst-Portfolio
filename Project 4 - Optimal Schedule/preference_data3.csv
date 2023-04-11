@@ -1,0 +1,73 @@
+Instructor,Level,Load,Upper 1st choice:,Upper 2nd choice,Upper 3rd choice:,11,6,7,9,4,8,1,2,Do you volunteer to teach a large lecture?,Lower 1st Choice,Lower 2nd Choice,Lower 3rd Choice,List any courses you would prefer NOT to teach,Early,Midday,Late ,If early AMis your first choice is 8AMokay?,If early AMis your first choice is 8:30 AMokay?,If late PMis your first choice is 4 PMokay?,MWF,TuTh,MW
+1,V,0-2,27,24,46,1,1,3,2,1,1,3,3,"No, I do not volunteer to teach large lectures",13,14,9,,3,1,2,No,No,No,1,2,3
+2,V,2-2,"28, 39, 41, 36, 23, 37","30, 27","34, 26",3,2,1,3,3,3,3,2,"No, I do not volunteer to teach large lectures","18, 13","17, 16",14,,1,2,3,Yes,,No,3,1,2
+3,V,2-2,29,26,25,2,2,2,2,1,2,3,3,"No, I do not volunteer to teach large lectures",14,13,17,"15, 45",3,1,2,No,No,Yes,3,1,2
+4,V,2-2,42,36,26,1,2,3,,,,,,"Yes, I volunteer",17,16,14,"28,  34",3,1,2,Yes,Yes,Yes,3,2,1
+5,V,2-1,26,24,35,3,3,3,2,2,2,2,2,"No, I do not volunteer to teach large lectures",16,13,14,,3,2,1,,,Yes,3,1,2
+6,V,1-2,26,29,25,1,1,1,1,1,1,1,1,"No, I do not volunteer to teach large lectures",12,2,1,,3,1,2,No,No,No,3,2,1
+7,V,2-2,26,29,25,1,3,3,1,2,2,1,1,"No, I do not volunteer to teach large lectures",15,2,1,,1,2,3,Yes,Yes,No,3,1,2
+8,V,1-2,31,39,28,2,2,2,2,1,1,3,3,"No, I do not volunteer to teach large lectures",13,17,14,18,1,2,3,No,No,No,2,1,3
+9,V,0-2,"36, 23","41, 30",46,2,1,1,3,2,2,3,3,"No, I do not volunteer to teach large lectures","18, 16",17,"14, 13",,1,2,3,No,Yes,,2,1,3
+10,V,2-1,28,39,34,2,2,2,2,1,1,3,3,"No, I do not volunteer to teach large lectures",17,14,17,"18, 42, 31, 35, 44",1,2,3,No,Yes,No,3,1,2
+11,V,1-0,46;,36;,27,2,3,3,2,1,1,3,3,"Yes, I volunteer",13,17,14,,1,2,3,No,Yes,Yes,1,2,3
+12,V,2-2,"28, 41","39, 46",36,2,1,1,3,1,1,3,3,"No, I do not volunteer to teach large lectures","13, 14",17,18,"11, 10, 6, 7, 5, 3, 9, 4, 8,  16, 40, 31, 35, 34, 44, 38, 22, 27, 24, 33, 37",1,2,3,Yes,Yes,,3,1,2
+13,V,2-2,30,27,"24, 33",2,2,3,3,1,1,3,3,"No, I do not volunteer to teach large lectures","16, 18",17,"14, 13",,3,1,2,,,,3,2,1
+14,V,2-2,34,41,37,3,3,3,2,1,1,3,3,"No, I do not volunteer to teach large lectures",13,"14, 17",18,"5, 3, 40, 24, 33",2,3,1,,,Yes,1,3,2
+15,V,0-2,2,1,13,3,3,3,3,3,3,2,1,"Yes, I volunteer",13,46,2,,2,1,3,Yes,Yes,Yes,1,2,3
+16,V,2-2,29,25,26,3,3,3,3,3,3,2,1,"No, I do not volunteer to teach large lectures",16,2,1,,3,1,2,No,No,Yes,3,1,2
+17,V,2-1,14,17,16,,,3,,2,1,,,"No, I do not volunteer to teach large lectures",14,17,16,,3,1,2,No,No,Yes,3,1,2
+18,V,2-2,30,44,31,,,,2,1,3,,,"No, I do not volunteer to teach large lectures",30,44,31,"28, 39, 24, 37 33",3,1,2,No,No,Yes,3,2,1
+19,L,3-3,-,-,-,3,3,2,3,1,1,3,3,"No, I do not volunteer to teach large lectures",18,17,40,,2,1,3,,Yes,,3,1,2
+20,L,4-3,NA,NA,NA,1,1,2,1,3,3,3,3,"Yes, I volunteer","11, 10, 6, 5, 9",7,3,Upper,3,1,2,,,No,1,2,3
+21,L,3-3,24,27,35,,,3,,1,2,,,"Yes, I volunteer",13,18,14,,1,2,3,Yes,Yes,,1,2,3
+22,L,3-3,NA,NA,NA,,,,,,,3,1,"Yes, I volunteer",2,1,13,,2,1,3,,,,1,2,3
+23,L,3-2,None,None,None,2,2,2,3,1,2,3,3,"Yes, I volunteer",16,13,14,,1,2,3,Yes,Yes,,1,3,2
+24,L,3-3,44,37,40,3,3,2,3,1,2,3,3,"No, I do not volunteer to teach large lectures",18,13,16,"1, 11, 22, 4",1,2,3,Yes,Yes,Yes,3,1,2
+25,L,3-3,22,27,35,3,1,3,3,3,3,3,2,"Yes, I volunteer","16, 18, 13",17,14,,2,1,3,,,,3,1,2
+26,L,3-3,24,36,27,3,3,3,3,1,2,3,3,"Yes, I volunteer",17,16,13,,1,2,3,No,No,,3,1,2
+27,L,3-3,"38, 22, 26, 29, 12","46, 40, 28, 34","39, 41, 31, 35, 44, 36, 23, 30, 27, 24, 33, 37, 25, 45",3,3,3,2,2,2,1,1,"Yes, I volunteer","14, 17, 18, 13, 16","11, 10, 7, 5, 9, 4, 4, 8","6, 3",,1,2,3,No,Yes,,2,1,3
+28,L,3-3,38,35,20,3,2,3,2,3,2,3,2,"No, I do not volunteer to teach large lectures",14,4,7,Low and LL,3,1,2,No,No,No,1,2,3
+29,L,3-3,NA,NA,NA,3,2,1,,,,,,"No, I do not volunteer to teach large lectures",14,16,17,,1,2,3,Yes,Yes,No,1,2,3
+30,L,0-3,40,na,na,3,3,3,2,1,1,2,2,"Yes, I volunteer",8,40,14,Upper,1,2,3,Yes,Yes,No,2,1,3
+31,L,3-3,27,24,46,,,,3,2,1,,,"Yes, I volunteer",16,18,13,,3,1,2,No,No,Yes,2,1,3
+32,L,,none,none,none,,2,1,,3,,,,"Yes, I volunteer",10,7,17,,3,1,2,No,No,Yes,3,2,1
+33,P,2-0,29,15,25,2,2,2,2,2,2,2,2,"No, I do not volunteer to teach large lectures",15,46,13,,3,2,1,No,No,Yes,3,1,2
+34,P,2-1,44,34,46,3,3,3,3,2,2,3,3,"No, I do not volunteer to teach large lectures",13,18,14,,1,2,3,No,Yes,No,1,2,5
+35,P,1-1,45,25,29,,,,,,,3,1,"No, I do not volunteer to teach large lectures",15,12,13,,1,2,3,Yes,Yes,No,3,1,2
+36,P,2-1,35,31,40,3,3,3,3,3,3,3,3,"No, I do not volunteer to teach large lectures",18,13,18,,2,1,3,No,No,No,1,2,5
+37,P,2-1,46,28,41,3,3,3,3,3,3,3,3,"No, I do not volunteer to teach large lectures",16,18,13,14,1,3,2,Yes,Yes,Yes,1,2,3
+38,P,2-1,34,28,31,3,3,3,3,1,3,3,3,"No, I do not volunteer to teach large lectures",18,13,14,"4, 8, 17, 16, 46.",1,2,3,Yes,Yes,,3,1,2
+39,P,1-2,41,28,461,3,3,3,2,3,2,3,3,"No, I do not volunteer to teach large lectures",13,18,16,,1,2,3,Yes,Yes,No,3,1,2
+40,P,1-2,37,"41,34","28,39",3,3,3,3,2,1,3,3,"No, I do not volunteer to teach large lectures",18,18,13,,1,2,3,No,Yes,,3,1,2
+41,P,0-1,25,29,45,,,,,,,1,2,"No, I do not volunteer to teach large lectures",13,16,18,,2,1,3,,,,1,2,3
+42,P,1-1,"41, 36, 23, 37","41, 36, 23, 37","41, 36, 23, 37",3,3,3,3,1,2,3,3,"No, I do not volunteer to teach large lectures",18,14,17,,1,2,3,Yes,Yes,No,3,1,2
+43,P,1-2,30,36,23,3,3,3,3,3,3,3,3,"No, I do not volunteer to teach large lectures",16,14,17,Low and LL,3,1,2,No,No,No,3,1,2
+44,P,1-2,"39, 28",46,"40, 22, 31",3,3,3,3,2,2,3,3,"No, I do not volunteer to teach large lectures",13,18,"14, 17",,2,1,3,No,No,No,2,1,3
+45,P,1-1,20,31,42,3,3,3,1,2,1,3,1,"Yes, I volunteer",46,13,14,,1,2,3,No,Yes,No,3,1,2
+46,P,1-0,39,46,28,3,3,2,3,1,2,,,"No, I do not volunteer to teach large lectures",13,14,17,,1,2,3,No,Yes,No,2,1,3
+47,P,2-1,41,39,34,3,3,3,3,1,3,,3,"No, I do not volunteer to teach large lectures",18,13,18,28,2,1,3,No,No,No,2,1,3
+48,P,2-1,26,24,36,3,3,3,2,1,1,3,2,"No, I do not volunteer to teach large lectures",16,13,18,,3,2,1,No,No,Yes,3,2,1
+49,P,0-2,"27, 24, 26, 29","35, 33, 30, 36,","30, 36, 23",3,3,3,3,1,1,3,3,"No, I do not volunteer to teach large lectures",16,"14, 17, 18, 13",46,,2,1,3,No,Yes,No,2,1,3
+50,P,2-1,15,29,25,,,,,,,3,2,"No, I do not volunteer to teach large lectures",12,2,1,,2,1,3,,,,3,1,2
+51,P,2-1,26,35,24,3,3,3,2,1,1,3,2,"No, I do not volunteer to teach large lectures",16,18,13,,3,1,2,No,No,Yes,3,1,2
+52,P,1-1,28,39,46,,3,,,2,1,,,"No, I do not volunteer to teach large lectures",13,18,17,16,1,2,3,Yes,Yes,No,1,2,3
+53,P,2-0,35,27,24,3,,,,1,2,,,"No, I do not volunteer to teach large lectures",13,16,18,,1,3,2,No,Yes,,3,2,1
+54,P,2-1,39,28,34,,,,,,,,,"No, I do not volunteer to teach large lectures",18,18,18,,2,1,3,No,Yes,No,3,1,2
+55,P,0-2,37,23,44,,,,,,,,,"No, I do not volunteer to teach large lectures",46,40,46,no LL or low,2,3,1,No,Yes,Yes,3,1,2
+56,P,2-1,37,27,24,,,3,,2,1,,,"No, I do not volunteer to teach large lectures",16,18,13,,3,1,2,,,,1,2,3
+57,P,1-2,34,46,41,,,,,,,,,"No, I do not volunteer to teach large lectures",18,13,16,,3,1,2,,,,2,1,3
+58,P,2-0,25,29,26,,,,,,,3,2,"No, I do not volunteer to teach large lectures",13,46,40,,3,2,1,,,No,3,2,1
+59,P,1-1,31,46,28,,,3,,1,2,,,"No, I do not volunteer to teach large lectures",13,18,16,,2,1,3,No,Yes,No,3,1,2
+60,P,1-1,20,"35, 31","40, 46",,,3,,1,2,,,"Yes, I volunteer",13,18,"14, 17",,2,1,3,No,Yes,No,3,1,2
+61,P,0-1,30,24,35,,,,,,,,,"No, I do not volunteer to teach large lectures",17,16,14,"36, 23",2,1,3,,,,3,1,2
+62,P,2-1,41,46,34,,,,,,,,,"No, I do not volunteer to teach large lectures",13,17,14,LL,2,1,3,No,No,,3,1,2
+63,P,2-1,35,36,23,,,,2,,,,1,"No, I do not volunteer to teach large lectures",16,14,17,,2,1,3,No,No,No,3,1,2
+64,P,1-2,25,29,26,,,,,,,1,3,"No, I do not volunteer to teach large lectures",18,13,16,,2,1,3,,,,3,2,1
+65,P,1-1,42,27,24,,,,3,1,2,,,"No, I do not volunteer to teach large lectures",13,16,18,,1,2,3,No,No,No,1,2,3
+66,P,2-0,N/A,N/A,N/A,,,,,,,,,"No, I do not volunteer to teach large lectures",N/A,N/A,N/A,N/A,2,1,3,,,,3,1,2
+67,P,,43,none,none,,,,,,,,,"No, I do not volunteer to teach large lectures",none,none,none,,2,1,3,,,,3,1,2
+68,P,,29,26,25,,,,,3,,2,1,"No, I do not volunteer to teach large lectures",13,18,16,"40, 34, 44, any LL",1,2,3,No,Yes,Yes,3,1,2
+69,P,,26,30,29,,,,,3,2,,,"No, I do not volunteer to teach large lectures",16,18,18,,3,1,2,No,No,No,3,1,2
+70,P,1-1,35,24,27,1,,,,2,3,,,"No, I do not volunteer to teach large lectures",18,16,13,,3,1,2,,,,3,2,1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,Columns G through N are some large lectures. Each instructor ranks their top three choices among those,,,,,,,,,,,,,,,,,,,,,

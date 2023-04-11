@@ -1,0 +1,75 @@
+
+```{r}
+df <- read.csv("preference_data3.csv")
+```
+
+```{r}
+H1 <- df$Early*df$MWF
+H2 <- df$Early*df$MWF
+H3 <- df$Early*df$MWF
+H4 <- df$Midday*df$MWF
+H5 <- df$Midday*df$MWF
+H6 <- df$Midday*df$MWF
+H7 <- df$Late*df$MW
+H8 <- df$Late*df$MW
+H9 <- df$Early*df$TuTh
+H10 <- df$Early*df$TuTh
+H11 <- df$Midday*df$TuTh
+H12 <- df$Midday*df$TuTh
+H13 <- df$Late*df$TuTh
+H14 <- df$Late*df$TuTh
+time_matri <- data.frame(H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14)
+time_matrix <-  time_matri[-c(71,72),]
+```
+
+```{r}
+time_matrix[time_matrix=="2"] <- "0.8"
+time_matrix[time_matrix=="3"] <- "0.6"
+time_matrix[time_matrix=="4"] <- "0.4"
+time_matrix[time_matrix=="6"] <- "0.2"
+time_matrix[time_matrix=="9"] <- "0"
+```
+
+```{r}
+install.packages("readr")
+library("readr")
+write_csv(time_matrix, file = "time_matrix.csv")
+```
+
+```{r}
+
+largelec <- read.csv("/Users/brendanwillis/Desktop/Math456/project/ll.csv")
+largelec$Do.you.volunteer.to.teach.a.large.lecture.[largelec$Do.you.volunteer.to.teach.a.large.lecture. == 'Yes, I volunteer'] <- '10'
+largelec$Do.you.volunteer.to.teach.a.large.lecture.[largelec$Do.you.volunteer.to.teach.a.large.lecture. == 'No, I do not volunteer to teach large lectures'] <- '1'
+largelec[is.na(largelec)] = 0
+```
+
+```{r}
+largelec[largelec == '1'] <- '.3'
+largelec[largelec == '2'] <- '.2'
+largelec[largelec == '3'] <- '.1'
+```
+
+```{r}
+install.packages("readr")
+library("readr")
+write_csv(largelec, file = "largelec.csv")
+```
+
+```{r}
+prefer <- read.csv("/Users/brendanwillis/Downloads/course preferences - Sheet1.csv")
+```
+
+```{r}
+prefer[is.na(prefer)]=.25
+```
+
+```{r}
+install.packages("readr")
+library("readr")
+write_csv(prefer, file = "prefer.csv")
+```
+
+
+
+
